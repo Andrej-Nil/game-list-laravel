@@ -1,0 +1,31 @@
+.rating {
+  position: relative;
+  display: inline-flex;
+}
+
+.rating__line {
+  display: flex;
+
+  &_active {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 50%;
+  }
+}
+
+.rating__star {
+  display: block;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  &_bg {
+    background-image: url("../../images/dest/icon/star-grey.svg");
+  }
+  &_active {
+    background-image: url("../../images/dest/icon/star-active.svg");
+  }
+}

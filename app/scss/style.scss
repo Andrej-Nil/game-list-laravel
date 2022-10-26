@@ -1,6 +1,15 @@
 @import "./main";
+
+@import "./elements/logo";
+@import "./elements/input";
+@import "./elements/rating";
+@import "./elements/btn";
+
 @import "./blocks/header";
 @import "./blocks/navigation";
 @import "./blocks/user-menu";
-
-@import "./elements/logo";
+@import "./blocks/main";
+@import "./blocks/form-search";
+@import "./blocks/game-list";
+@import "./blocks/game-card";
+@import "./blocks/pagination";
