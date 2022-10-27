@@ -5,6 +5,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+p {
+  margin-bottom: 10px;
+}
 img {
   display: block;
 }
@@ -21,7 +25,7 @@ li {
 
 body {
   background: #1f203c;
-  color: #444;
+  color: #ddd;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: 500;

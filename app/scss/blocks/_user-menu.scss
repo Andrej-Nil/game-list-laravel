@@ -12,8 +12,10 @@
   padding: 8px 15px;
   cursor: pointer;
   transition: 0.2s ease-in-out;
+  color: #444;
   &:hover {
     background: #aaa;
+    color: #fff;
   }
   //align-items: center;
 }

@@ -6,11 +6,26 @@
   cursor: pointer;
   border-radius: 5px;
   transition: 0.2s ease-in-out;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  &_big {
+    padding: 8px 15px;
+    font-size: 16px;
+  }
   &_blue {
     background: #4444ff;
     color: #ddd;
     &:hover {
       background: #7777ff;
+      color: #fff;
+    }
+  }
+  &_red {
+    background: #ff4444;
+    color: #ddd;
+    &:hover {
+      background: #ff7777;
+      color: #fff;
     }
   }
 }

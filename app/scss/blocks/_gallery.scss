@@ -1,0 +1,23 @@
+.gallery {
+  margin-bottom: 50px;
+}
+
+.gallery__title {
+  margin-bottom: 30px;
+}
+
+.gallery__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.gallery__item {
+  padding: 5px;
+  border-radius: 5px;
+  background: #ddd;
+}
+
+.gallery__pic {
+  width: 100%;
+}
