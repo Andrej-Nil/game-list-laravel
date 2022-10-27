@@ -1,0 +1,34 @@
+.form-container {
+  max-width: 568px;
+  margin: 0 auto;
+}
+
+.form {
+  background: #ccc;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.form-controls {
+  margin-bottom: 20px;
+}
+
+.form__bottom {
+  display: flex;
+  align-items: center;
+}
+
+.form__link {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ff4444;
+  transition: 0.2s ease-in-out;
+  &:hover {
+    color: #4444ff;
+  }
+}
+
+.form__btn {
+  display: inline-block;
+  margin-left: auto;
+}

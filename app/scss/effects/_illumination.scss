@@ -18,13 +18,13 @@
   }
   &:nth-child(odd) {
     &::before {
-      background: #ff4444;
+      background: #cc3333;
     }
 
     &:hover {
       &::before {
         width: 100%;
-        background: #4444ff;
+        background: #3333cc;
       }
       & * {
         color: #fdfdfd;
