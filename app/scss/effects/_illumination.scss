@@ -1,0 +1,50 @@
+._illumination {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 0%;
+    height: 100%;
+    border-radius: 5px 0 0 5px;
+    background: #aaa;
+    transition: 0.2s ease-in-out;
+  }
+  &:hover {
+    &::before {
+      width: 100%;
+    }
+  }
+  &:nth-child(odd) {
+    &::before {
+      background: #ff4444;
+    }
+
+    &:hover {
+      &::before {
+        width: 100%;
+        background: #4444ff;
+      }
+      & * {
+        color: #fdfdfd;
+      }
+    }
+  }
+
+  &:nth-child(even) {
+    &::before {
+      background: #4444ff;
+    }
+
+    &:hover {
+      &::before {
+        width: 100%;
+        background: #ff4444;
+      }
+      & * {
+        color: #fdfdfd;
+      }
+    }
+  }
+}
