@@ -1,0 +1,17 @@
+.logo-text {
+  //display: inline-flex;
+}
+
+.logo-text {
+  font-size: 26px;
+  font-family: "Anton", sans-serif;
+}
+
+.logo-text__word {
+  &_red {
+    color: #ff4444;
+  }
+  &_blue {
+    color: #4444ff;
+  }
+}

@@ -22,10 +22,8 @@
   flex-shrink: 0;
   background-repeat: no-repeat;
   background-size: contain;
-  &_bg {
-    background-image: url("../../images/dest/icon/star-grey.svg");
-  }
+  background-image: url("../images/dest/icon/star-grey.svg");
   &_active {
-    background-image: url("../../images/dest/icon/star-active.svg");
+    background-image: url("../images/dest/icon/star-active.svg");
   }
 }

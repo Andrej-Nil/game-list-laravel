@@ -47,12 +47,12 @@
       </nav>
 
 
-      <div class="user-menu">
-        <div class="user-menu__btn">
+      <div id="userMenu" class="user-menu">
+        <div data-user-menu-btn class="user-menu__btn">
           <i class="user-menu__avatar"></i>
           <span class="user-menu__name">Вход</span>
         </div>
-        <ul data-status="close" class="user-menu__list user-menu__list_close">
+        <ul data-user-menu-list="close" class="user-menu__list user-menu__list_close">
           <li class="user-menu__item">
             <a href="login.html" class="user-menu__link">Войти</a>
           </li>
@@ -73,200 +73,19 @@
 
     </form>
 
-    <div class="game-list">
-
-      <div class="game-card">
-        <div class="game-card__preview">
-          <a href="game-page.html">
-            <img class="game-card__pic" src="./images/dest/game-cover1.jpg" alt="">
-          </a>
-
-        </div>
-        <a class="game-card__title" href="game-page.html">Dark Souls remastered</a>
-        <div class="game-card__info">
-
-
-          <div class="game-card__row">
-
-            <div class="rating">
-              <div class="rating__line rating__line_bg">
-                <i class="rating__star rating__star_bg"></i>
-                <i class="rating__star rating__star_bg"></i>
-                <i class="rating__star rating__star_bg"></i>
-                <i class="rating__star rating__star_bg"></i>
-                <i class="rating__star rating__star_bg"></i>
-              </div>
-
-              <div class="rating__line rating__line_active">
-                <i class="rating__star rating__star_active"></i>
-                <i class="rating__star rating__star_active"></i>
-                <i class="rating__star rating__star_active"></i>
-                <i class="rating__star rating__star_active"></i>
-                <i class="rating__star rating__star_active"></i>
-              </div>
-            </div>
-
-
-
-            <span class="game-card__desc">
-              <span class="game-card__label">Оценили</span>
-              <span class="game-card__value">436</span>
-            </span>
-          </div>
-
-          <div class="game-card__row">
-
-            <button class="btn btn_blue">Добавить</button>
-
-
-            <span class="game-card__desc">
-              <span class="game-card__label">Добавили</span>
-              <span class="game-card__value">436</span>
-            </span>
-
-          </div>
-        </div>
-      </div>
-
-      <div class="game-card">
-        <div class="game-card__preview">
-          <a href="game-page.html">
-            <img class="game-card__pic" src="./images/dest/game-cover2.jpg" alt="">
-          </a>
-
-        </div>
-
-
-        <a class="game-card__title" href="game-page.html">Rise of the Tomb Raider</a>
-        <div class="game-card__info">
-          <div class="game-card__row">
-
-            <div class="rating">
-              <div class="rating__line rating__line_bg">
-                <i class="rating__star rating__star_bg"></i>
-                <i class="rating__star rating__star_bg"></i>
-                <i class="rating__star rating__star_bg"></i>
-                <i class="rating__star rating__star_bg"></i>
-                <i class="rating__star rating__star_bg"></i>
-              </div>
-
-              <div class="rating__line rating__line_active">
-                <i class="rating__star rating__star_active"></i>
-                <i class="rating__star rating__star_active"></i>
-                <i class="rating__star rating__star_active"></i>
-                <i class="rating__star rating__star_active"></i>
-                <i class="rating__star rating__star_active"></i>
-              </div>
-            </div>
-
-
-
-            <span class="game-card__desc">
-              <span class="game-card__label">Оценили</span>
-              <span class="game-card__value">436</span>
-            </span>
-          </div>
-
-          <div class="game-card__row">
-
-            <button class="btn btn_blue">Добавить</button>
-
-
-            <span class="game-card__desc">
-              <span class="game-card__label">Добавили</span>
-              <span class="game-card__value">436</span>
-            </span>
-
-          </div>
-        </div>
-      </div>
-
-      <div class="game-card">
-        <div class="game-card__preview">
-          <a href="game-page.html">
-            <img class="game-card__pic" src="./images/dest/game-cover3.jpg" alt="">
-          </a>
-
-        </div>
-        <a class="game-card__title" href="game-page.html">Uncharted 4: A Thief’s End</a>
-        <div class="game-card__info">
-
-
-          <div class="game-card__row">
-
-            <div class="rating">
-              <div class="rating__line rating__line_bg">
-                <i class="rating__star rating__star_bg"></i>
-                <i class="rating__star rating__star_bg"></i>
-                <i class="rating__star rating__star_bg"></i>
-                <i class="rating__star rating__star_bg"></i>
-                <i class="rating__star rating__star_bg"></i>
-              </div>
-
-              <div class="rating__line rating__line_active">
-                <i class="rating__star rating__star_active"></i>
-                <i class="rating__star rating__star_active"></i>
-                <i class="rating__star rating__star_active"></i>
-                <i class="rating__star rating__star_active"></i>
-                <i class="rating__star rating__star_active"></i>
-              </div>
-            </div>
-
-
-
-            <span class="game-card__desc">
-              <span class="game-card__label">Оценили</span>
-              <span class="game-card__value">436</span>
-            </span>
-          </div>
-
-          <div class="game-card__row">
-
-            <button class="btn btn_blue">Добавить</button>
-
-
-            <span class="game-card__desc">
-              <span class="game-card__label">Добавили</span>
-              <span class="game-card__value">436</span>
-            </span>
-
-          </div>
-        </div>
-      </div>
-
-
+    <div class="main-pic">
+      <img class="main-pic__img" src="./images/dest/main-picture.jpg" alt="">
+    </div>
+    <div class="main-desc">
+      <span class="logo-text"><span class="logo-text__word logo-text__word_red">Game</span><span
+          class="logo-text__word logo-text__word_blue">List</span></span> - место где ты можешь сотовлять свой список
+      игр, добовлять игры, ставить оценки, оставлять свои отзовы, мнение или даже выкладывать статьи о своих любимых
+      играх! Общаться с другими пользователями о играх, а так же найти компанию для совместной игры - ведь играть вместе
+      веселей! Присоединяйся!
 
     </div>
 
-    <div class="pagination container">
-      <a href="" class="pagination__item">
-        <svg class="pagination__arrow pagination__arrow_rotate" xmlns="http://www.w3.org/2000/svg" width="11"
-          height="20">
-          <path
-            d="M.38 19.01c.49.49 1.28.49 1.77 0l8.31-8.31a.996.996 0 0 0 0-1.41L2.15.98a1.25 1.25 0 0 0-1.77 0 1.25 1.25 0 0 0 0 1.77L7.62 10 .37 17.25c-.48.48-.48 1.28.01 1.76Z" />
-        </svg>
-      </a>
 
-      <a href="" class="pagination__item">1</a>
-      <a href="" class="pagination__item pagination__item_active">2</a>
-      <a href="" class="pagination__item">3</a>
-      <a href="" class="pagination__item">4</a>
-      <a href="" class="pagination__item">5</a>
-      <a href="" class="pagination__item">6</a>
-      <a href="" class="pagination__item">7</a>
-      <a href="" class="pagination__item">8</a>
-
-      <span class="pagination__item pagination__item_fake">...</span>
-
-      <a href="" class="pagination__item">9</a>
-
-      <a href="" class="pagination__item">
-        <svg class="pagination__arrow" xmlns="http://www.w3.org/2000/svg" width="11" height="20">
-          <path
-            d="M.38 19.01c.49.49 1.28.49 1.77 0l8.31-8.31a.996.996 0 0 0 0-1.41L2.15.98a1.25 1.25 0 0 0-1.77 0 1.25 1.25 0 0 0 0 1.77L7.62 10 .37 17.25c-.48.48-.48 1.28.01 1.76Z" />
-        </svg>
-      </a>
-    </div>
   </main>
   <script src="./js/main.min.js"></script>
 </body>
