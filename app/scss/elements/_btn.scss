@@ -29,6 +29,14 @@
       color: #fff;
     }
   }
+  &_yellow {
+    background: #cccc33;
+    color: #444;
+    &:hover {
+      background: #eeee33;
+      color: #222;
+    }
+  }
 
   &:disabled {
     background: #aaa;
