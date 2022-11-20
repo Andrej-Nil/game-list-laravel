@@ -14,7 +14,7 @@
 }
 
 .input {
-  //display: block;
+  display: block;
   width: 100%;
   outline: none;
   border: none;
@@ -24,4 +24,8 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   color: #444;
+}
+
+.input_bd {
+  border: 1px solid #ddd;
 }

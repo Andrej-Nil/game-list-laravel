@@ -7,6 +7,7 @@
 @import "./elements/btn";
 @import "./elements/titles";
 @import "./elements/select";
+@import "./elements/row";
 
 @import "./blocks/header";
 @import "./blocks/navigation";
@@ -24,5 +25,12 @@
 @import "./blocks/profile-menu";
 @import "./blocks/profile-info";
 @import "./blocks/form";
+@import "./blocks/sidebar";
+@import "./blocks/list";
+@import "./blocks/admin";
+@import "./blocks/content";
+@import "./blocks/total";
 
 @import "./effects/illumination";
+@import "./effects/dark-bg";
+@import "./effects/shift";

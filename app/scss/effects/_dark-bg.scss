@@ -1,0 +1,12 @@
+._dark-bg {
+  transition: 0.2s ease-in-out;
+  a {
+    transition: 0.2s ease-in-out;
+  }
+  &:hover {
+    background: #ccc;
+    a {
+      color: #000;
+    }
+  }
+}

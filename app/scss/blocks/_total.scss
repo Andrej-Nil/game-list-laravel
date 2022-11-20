@@ -1,0 +1,20 @@
+.total {
+  width: 340px;
+}
+
+.total__title {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.total__content {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.total__row {
+  display: flex;
+  justify-content: space-between;
+}
