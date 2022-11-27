@@ -1,12 +1,17 @@
 .form-container {
   max-width: 568px;
   margin: 0 auto;
+  width: 100%;
 }
 
 .form {
-  background: #f0f0f0;
+  background: #fff;
   border-radius: 5px;
   padding: 20px;
+  width: 100%;
+  &._bg {
+    background: #f0f0f0;
+  }
 }
 
 .form-controls {

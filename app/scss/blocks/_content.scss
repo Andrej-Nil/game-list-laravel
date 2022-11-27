@@ -6,7 +6,7 @@
 }
 
 .content__title {
-  color: #444444;
+  color: #444;
   margin-bottom: 30px;
 }
 
@@ -25,9 +25,19 @@
   flex-grow: 1;
 }
 
+.content__form {
+  padding: 0;
+}
+
 .content__list {
   max-height: 500px;
+  padding: 15px 10px;
+
   overflow: auto;
   border-radius: 5px;
   border: 1px solid #ddd;
+}
+
+.content__text {
+  color: #444;
 }

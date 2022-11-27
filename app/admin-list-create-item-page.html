@@ -63,34 +63,48 @@
       </div>
     </div>
   </header>
-  <main class="main form-container">
-    <h1 class="main-title">Вход</h1>
+  <main class="main admin container">
+    <div class="sidebar">
+      <h2 class="sidebar__title">Управление</h2>
+      <ul class="list">
+        <li class="list__row _dark-bg _shift">
+          <a href="admin-list-page.html" class="list__item">
+            Разработчики
+          </a>
+        </li>
+        <li class="list__row _dark-bg _shift">
+          <a href="admin-list-page.html" class="list__item">
+            Жанры
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="content">
+      <div class="content__title title-h4">Создание</div>
 
-    <form class="form form-container" action="" method="GET">
-      <div class="form-controls">
-        <label class="form-control control">
-          <span class="form-control__name control__name">Ваше имя(ник)</span>
-          <input class="input input_bd">
-        </label>
+      <div class="content__inner">
+        <form class="content__form form" action="" method="GET">
+          <div class="form-controls">
+            <label class="form-control control">
+              <span class="form-control__name control__name">Название</span>
+              <input class="input input_bd">
+            </label>
 
-        <label class="form-control control">
-          <span class="form-control__name control__name">Пароль</span>
-          <input class="input input_bd">
-        </label>
+            <label class="form-control control">
+              <span class="form-control__name control__name">Описание</span>
+              <textarea class="input input_bd" rows="5"></textarea>
+            </label>
 
-        <label class="form-control control">
-          <span class="form-control__name control__name">Повторите пароль</span>
-          <input class="input input_bd">
-        </label>
+
+          </div>
+
+          <div class="form__bottom">
+            <button type="submit" class="form__btn btn btn_blue btn_big">Создать</button>
+          </div>
+
+        </form>
       </div>
-
-      <div class="form__bottom">
-        <a class="form__link" href="login-page.html">Войти</a>
-        <button type="submit" class="form__btn btn btn_blue btn_big" disabled>Зарегистрироваться</button>
-      </div>
-
-    </form>
-
+    </div>
   </main>
   <script src="./js/main.min.js"></script>
 </body>
