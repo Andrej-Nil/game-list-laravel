@@ -43,6 +43,7 @@ class Select {
   }
 
   init = () => {
+    this.$selects = document.querySelectorAll('[data-select]');
     this.listeners();
   }
 
@@ -58,6 +59,13 @@ class Select {
     $content.style.height = '0px';
     $content.style.opacity = 0;
     $content.dataset.selectContent = 'close';
+  }
+
+  closeAll = () => {
+    this.$selects.forEach(($select) => {
+      const $content = $select.querySelector('[data-select-content]');
+      this.close($content);
+    });
   }
 
   toggleList($target) {
@@ -76,17 +84,32 @@ class Select {
     }
   }
 
-  changeTitle = ($input) => {
+  setTitle = ($input) => {
     const $select = $input.closest('[data-select]');
     const $content = $select.querySelector('[data-select-content]');
     const $selectTitle = $select.querySelector('[data-select-title]');
-    const title = $input.dataset.name;
-    $selectTitle.innerHTML = title;
+    $selectTitle.innerHTML = $input.dataset.name;
     $selectTitle.classList.remove('select__title_inactive');
     this.close($content);
   }
 
+  changeTitle = ($input) => {
+    const $select = $input.closest('[data-select]');
+
+    if ($select.dataset === 'multiselect') {
+      this.setMultiselectTitle($input);
+    } else {
+      this.setTitle($input);
+    }
+    //const $content = $select.querySelector('[data-select-content]');
+    //const $selectTitle = $select.querySelector('[data-select-title]');
+    //$selectTitle.innerHTML = this.getTitle($input);
+    //$selectTitle.classList.remove('select__title_inactive');
+    //this.close($content);
+  }
+
   clickHandler = (e) => {
+    this.closeAll()
     if (e.target.closest('[data-select-top]')) {
       this.toggleList(e.target);
     }

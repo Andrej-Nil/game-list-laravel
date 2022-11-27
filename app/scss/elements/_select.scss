@@ -10,6 +10,8 @@
   height: 0;
   transition: 0.2s ease-in-out;
   opacity: 0;
+  z-index: 100;
+
   transform: translateY(10px);
 }
 
@@ -33,10 +35,10 @@
 }
 
 .select__list {
+  max-height: 200px;
+  overflow-y: auto;
   background: #fff;
-}
-
-.select__list {
+  border: 1px solid #ddd;
   padding: 8px;
   border-radius: 5px;
 }
