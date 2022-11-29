@@ -61,8 +61,9 @@ class Select {
     $content.dataset.selectContent = 'close';
   }
 
-  closeAll = () => {
+  closeAll = (e) => {
     this.$selects.forEach(($select) => {
+      if ($select === e.target.closest('[data-select]')) return;
       const $content = $select.querySelector('[data-select-content]');
       this.close($content);
     });
@@ -93,10 +94,27 @@ class Select {
     this.close($content);
   }
 
+  setMultiselectTitle = ($input) => {
+    const $select = $input.closest('[data-select]');
+    const $selectTitle = $select.querySelector('[data-select-title]');
+    const inputsArr = Array.from($select.querySelectorAll('[data-select-input]'));
+
+    const checkedInputsArr = inputsArr.filter(($input) => {
+      return $input.checked
+    })
+    if (checkedInputsArr.length === 1) {
+      $selectTitle.innerHTML = checkedInputsArr[0].dataset.name;
+    } else {
+      $selectTitle.innerHTML = `Выбранно ${checkedInputsArr.length}`;
+    }
+
+    $selectTitle.classList.remove('select__title_inactive');
+  }
+
   changeTitle = ($input) => {
     const $select = $input.closest('[data-select]');
 
-    if ($select.dataset === 'multiselect') {
+    if ($select.dataset.select === 'multiselect') {
       this.setMultiselectTitle($input);
     } else {
       this.setTitle($input);
@@ -109,7 +127,7 @@ class Select {
   }
 
   clickHandler = (e) => {
-    this.closeAll()
+    this.closeAll(e)
     if (e.target.closest('[data-select-top]')) {
       this.toggleList(e.target);
     }
