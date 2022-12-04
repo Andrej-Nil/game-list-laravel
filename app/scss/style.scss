@@ -1,5 +1,11 @@
 @import "./main";
 
+
+@import "./effects/illumination";
+@import "./effects/dark-bg";
+@import "./effects/shift";
+
+
 @import "./elements/logo";
 @import "./elements/logo-text";
 @import "./elements/input";
@@ -19,8 +25,10 @@
 @import "./blocks/form-search";
 @import "./blocks/game-list";
 @import "./blocks/game-card";
+@import "./blocks/card-list";
+@import "./blocks/card";
 @import "./blocks/pagination";
-@import "./blocks/game";
+@import "blocks/main-card";
 @import "./blocks/gallery";
 @import "./blocks/profile";
 @import "./blocks/profile-menu";
@@ -32,6 +40,4 @@
 @import "./blocks/content";
 @import "./blocks/total";
 
-@import "./effects/illumination";
-@import "./effects/dark-bg";
-@import "./effects/shift";
+

@@ -1,0 +1,117 @@
+.card{
+  display: flex;
+  gap: 5px;
+  color: #444;
+}
+
+.card__main{
+  width: 100%;
+  position: relative;
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+  background: #f5f5f5;
+  border-radius: 5px;
+  transition: 0.2s ease-in-out;
+  &:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 0 5px 3px rgb(255 255 255 / 50%)
+  }
+}
+
+.card__link{
+  position: relative;
+  &:hover{
+
+  }
+}
+
+.card__link-text{
+  position: relative;
+}
+
+.card__picture{
+  width: 250px;
+}
+
+.card__img{
+  width: 100%;
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.card__link{
+  transition: 0.2s ease-in-out;
+  &:hover{
+    color: #cc3333;
+  }
+}
+.card__bottom{
+  margin-top: auto;
+  font-size: 14px;
+}
+
+.card-recommend__label{
+ margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.card-recommend__links{
+  display: flex;
+  gap: 5px;
+}
+
+
+.card-recommend__link{
+  font-size: 15px;
+  font-weight: 600;
+  &:hover{
+    color: #3333cc;
+  }
+  &:nth-child(odd){
+    &:hover{
+      color: #cc3333;
+    }
+  }
+}
+
+.card-btn{
+  padding: 10px;
+  background: #f5f5f5;
+  border-radius: 5px;
+  &::before{
+    border-radius: 5px;
+  }
+}
+
+.card-btn__link{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+
+}
+
+.card-btn__title{
+  transition: 0.2s ease-in-out;
+}
+
+.card-total{
+  margin-top: auto;
+
+}
+
+.card-total__label{
+  margin: 0;
+  transition: 0.2s ease-in-out;
+}
+
+.card-total__value{
+  margin: 0;
+  font-weight: 600;
+  transition: 0.2s ease-in-out;
+}

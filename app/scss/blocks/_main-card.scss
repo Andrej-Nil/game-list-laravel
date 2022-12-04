@@ -1,52 +1,52 @@
-.game {
+.main-card {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   margin-bottom: 50px;
 }
 
-.game__desc {
+.main-card__desc {
   display: flex;
   flex-direction: column;
 }
 
-.game__cover {
+.main-card__cover {
   padding: 5px;
   border-radius: 5px;
   background: #ddd;
 }
 
-.game__pic {
+.main-card__pic {
   width: 100%;
 }
 
-.game__title {
+.main-card__title {
   margin-bottom: 20px;
 }
 
-.game-rating {
+.main-card-rating {
   margin-bottom: 20px;
   display: flex;
   align-items: center;
   gap: 20px;
 }
 
-.game-rating__label {
+.main-card-rating__label {
   font-size: 18px;
 }
 
-.game__about {
+.main-card__about {
   margin-bottom: 40px;
   line-height: 1.3;
   font-weight: 400;
   margin-bottom: auto;
 }
 
-.game-info {
-  margin-bottom: 30px;
+.main-card-info {
+
 }
 
-.game-info__row {
+.main-card-info__row {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -56,13 +56,14 @@
   }
 }
 
-.game-controls {
+.main-card-controls {
+  margin-top: 30px;
   display: flex;
   justify-content: flex-end;
   gap: 20px;
 }
 
-//.game__desc {
+//.main-card__desc {
 //  font-size: 12px;
 //  color: #999;
 //}

@@ -1,4 +1,8 @@
 ._illumination {
+  position: relative;
+  *{
+    position: relative;
+  }
   &::before {
     content: "";
     position: absolute;
@@ -11,6 +15,7 @@
     background: #aaa;
     transition: 0.2s ease-in-out;
   }
+
   &:hover {
     &::before {
       width: 100%;
@@ -48,3 +53,4 @@
     }
   }
 }
+
